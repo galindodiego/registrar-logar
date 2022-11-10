@@ -11,7 +11,7 @@ public class UsuarioService {
     @Autowired
     private UsuarioRepository usuarioRepository;
 
-    public Usuario registrarUsuario(String nome,String login, String password, String email){
+    public Usuario registrarUsuario(String nome,String email,String login,String password){
         if(login != null && password != null){
             Usuario usuario = new Usuario();
             usuario.setNome(nome);
