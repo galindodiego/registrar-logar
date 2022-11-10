@@ -36,10 +36,6 @@ public class UsuarioController {
     private String cadastrado(){
             return "pagina_cadastrado";
         }
-    @GetMapping("/test")
-    private String test(){
-        return "pagina_test";
-    }
 
     @PostMapping("/register")
     public String registrar(@ModelAttribute Usuario usuario){
